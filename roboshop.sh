@@ -1,9 +1,5 @@
 #!/bin/bash
 
-echo frontend instalation
-echo catalogue instalation
-echo Cart instalation
-
 case $1 in
 Frontend)
   echo Installing frontend
