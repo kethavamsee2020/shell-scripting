@@ -25,11 +25,12 @@ echo it is print command
 # 34 - blue
 # 35 - magenta
 # 36 - cyan
-echo -e “\e[1mHello World in Bold text\e[0m”
-echo -e “\e[4mHello Wotld in Underlined text \e[0m”
+echo -e "\e[1mHello world in Bold text\e[0m"
+echo -e "\e[1mHello World in Bold text\e[0m"
+echo -e "\e[4mHello Wotld in Underlined text \e[0m"
 
-echo -e “\e[31mHello World in Red colour\e[0m”
-echo -e “Yellow colour, but only \e[33mYellow\e[0m word is yellow colour “
+echo -e "\e[31mHello World in Red colour\e[0m"
+echo -e "Yellow colour, but only \e[33mYellow\e[0m word is yellow colour"
 
 ## Background colours:
 # 41 - red
@@ -38,7 +39,7 @@ echo -e “Yellow colour, but only \e[33mYellow\e[0m word is yellow colour “
 # 44 - blue
 # 45 - magenta
 # 46 - cyan
-echo -e “\e[42mGreen background\e[0m”
+echo -e "\e[42mGreen background\e[0m"
 
 ## Combinations can be done
-echo -e “\e[42;31;4m red on green with underline \e[0m”
+echo -e "\e[42;31;4m red on green with underline \e[0m"
