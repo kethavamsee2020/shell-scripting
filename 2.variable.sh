@@ -41,11 +41,11 @@ echo "Welcome to ${MYMAP[course]} Training. Timing is ${MYMAP[time]} ${MYMAP[zon
 # most of the times we need the data while running the script.
 #we can execute a command and that command out put can be stored in variable.
 
-DATE=$date +%F		# Command substituting
-echo -e "Welcome to DevOps Training, Today date is $date"
+DATE=$(date +%F)		# Command substituting
+echo -e "Welcome to DevOps Training, Today date is $DATE"
 
 # one more dynamic variables can be done by using Athematic expressions
 
 
-ADD=$VALUE=${(20+20)-4*2/6} 	# Arthimatic substitutions ${()}
+VALUE=$((20+203-4*2/6)) 	# Arthimatic substitutions ${()}
 echo VALUE = $VALUE
