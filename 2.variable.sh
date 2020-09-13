@@ -17,7 +17,7 @@ echo $a
 # some times you may need to store multiple values in a single variable.
 # in shell we call it as army. in some scripting languages this is called as a list
 
-ARRAY-(1 2 abc 20 o 0 1)
+ARRAY=(1 2 abc 20 o 0 1)
 
 # Single army can hold multiple data types, of course in shell everything is a string.
 
