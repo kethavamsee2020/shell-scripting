@@ -29,7 +29,7 @@ echo INDEX0 - ${ARRAY[0]}
 
 # Alternative  to that your army be accesses with NAME as well, that becomes Named arrays and in others scripting languages it called as MAP.
 
-declare -A MYMAP=( [course]=DevOps [time]=0730 [zone]=IST )
+declare -A MYMAP=( [course]=DevOps [time]=0730 [zone]=EST )
 
 echo "Welcome to ${MYMAP[course]} Training. Timing is ${MYMAP[time]} ${MYMAP[zone]}"
 
