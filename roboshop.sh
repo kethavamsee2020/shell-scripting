@@ -1,5 +1,19 @@
 #!/bin/bash
 
+USER_ID-$(id -u)
+case $USER_ID) in
+  0)
+    echo " Starting installation"
+    ;;
+  *)
+    echo " you should be a root user to perform this script"
+    exit
+    ;;
+esac
+
+
+
+
 case $1 in
  frontend)
    echo Installing frontend
