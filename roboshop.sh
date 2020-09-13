@@ -1,16 +1,16 @@
 #!/bin/bash
 
 case $1 in
- Frontend)
+ frontend)
    echo Installing frontend
    sudo yum install nginx -y
   # echo Completed installation of frontend
    ;;
- Catalogue)
+ catalogue)
    echo installing catalogue
    echo Completed installtion of Catalogue
    ;;
- Cart)
+ cart)
    echo installing Cart
    echo Completed installtion of Cart
    ;;
