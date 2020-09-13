@@ -39,7 +39,7 @@ echo -e "Yellow colour, but only \e[33mYellow\e[0m word is yellow colour"
 # 44 - blue
 # 45 - magenta
 # 46 - cyan
-echo -e "\e[42mGreen background\e[0m"
+echo -e "\e[43mGreen background\e[0m"
 
 ## Combinations can be done
 echo -e "\e[42;31;4m red on green with underline \e[0m"
