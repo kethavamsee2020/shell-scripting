@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USER_ID-$(id -u)
-case $USER_ID) in
+USER_ID=$(id -u)
+case $USER_ID in
   0)
     echo " Starting installation"
     ;;
