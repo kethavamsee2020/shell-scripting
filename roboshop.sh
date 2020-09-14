@@ -6,7 +6,7 @@ case $USER_ID in
     echo " Starting installation"
     ;;
   *)
-    echo " you should be a root user to perform this script"
+    echo " \e[31myou should be a root user to perform this script\e[0m"
     exit
     ;;
 esac
@@ -17,7 +17,7 @@ esac
 case $1 in
  frontend)
    echo Installing frontend
-   sudo yum install nginx -y
+  yum install nginx -y
   # echo Completed installation of frontend
    ;;
  catalogue)
