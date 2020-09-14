@@ -7,13 +7,13 @@ case $USER_ID in
     ;;
   *)
     echo -e "\e[1;31mYou should be a root user to perform this script\e[0m"
-    exit
+    exit 1
     ;;
 esac
 
 case $1 in
  frontend)
-   echo Installing frontend
+   echo -e "\e[31m************>>>>>>>>>>>>>>>>>>>>Installing frontend<<<<<<<<<<<<<<<<<<<<************\e[0m"
   yum install nginx -y
   # echo Completed installation of frontend
    ;;
@@ -28,5 +28,6 @@ case $1 in
  *)
    echo "invalid inputs, flowing inputs are only accepted"
    echo "usage:$0 frontend|catalogue|cart"
+   exit 2
    ;;
 esac
