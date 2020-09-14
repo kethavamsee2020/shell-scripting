@@ -20,7 +20,7 @@ Status_Check (){
    *)
      echo FAILURE
      ;;
-  ease
+  esac
 }
 case $1 in
  frontend)
