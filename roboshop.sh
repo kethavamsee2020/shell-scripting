@@ -15,7 +15,7 @@ esac
 Status_Check (){
   case $? in
    0)
-     echo SUCSESS
+     echo -e "\e[1;32mSUCSESS\e[0m"
      ;;
    *)
      echo FAILURE
@@ -26,11 +26,15 @@ case $1 in
  frontend)
    echo -e "\e[1;31m************>>>>>>>>>>>>>>>>>>>>Installing frontend<<<<<<<<<<<<<<<<<<<<************\e[0m"
    yum install nginx -y
+   echo -e "\e[1;32m************>>>>>>>>>>>>>>>>>>>>Installing Nginx<<<<<<<<<<<<<<<<<<<<************\e[0m"
+   Status_Check
+   echo -e "\e[1;33m************>>>>>>>>>>>>>>>>>>>>Enabling Nginx<<<<<<<<<<<<<<<<<<<<************\e[0m"
    systemctl enable nginx
    systemctl start nginx
+   Status_Check
 case $0 in
     0)
-      echo sucessfull
+      echo -e "\e[1;32mSucessfull\e[0m"
       ;;
     *)
       echo failure
