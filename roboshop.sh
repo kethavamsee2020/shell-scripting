@@ -1,5 +1,6 @@
 #!/bin/bash
 
+Set -e
 USER_ID=$(id -u)
 case $USER_ID in
   0)
@@ -10,11 +11,23 @@ case $USER_ID in
     exit 1
     ;;
 esac
-
+## Functions
+Status_Check (){
+  case $? in
+   0)
+     echo SUCSESS
+     ;;
+   *)
+     echo FAILURE
+     ;;
+  ease
+}
 case $1 in
  frontend)
    echo -e "\e[1;31m************>>>>>>>>>>>>>>>>>>>>Installing frontend<<<<<<<<<<<<<<<<<<<<************\e[0m"
    yum install nginx -y
+   systemctl enable nginx
+   systemctl start nginx
 case $0 in
     0)
       echo sucessfull
