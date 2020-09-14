@@ -28,20 +28,10 @@ case $1 in
    yum install nginx -y
    echo -e "\e[1;32m************>>>>>>>>>>>>>>>>>>>>Installing Nginx<<<<<<<<<<<<<<<<<<<<************\e[0m"
    Status_Check
-   echo -e "\e[1;33m************>>>>>>>>>>>>>>>>>>>>Enabling Nginx<<<<<<<<<<<<<<<<<<<<************\e[0m"
+   echo -e "\e[1;33m************>>>>>>>>>>>>>>>>>>>>STARTING Nginx<<<<<<<<<<<<<<<<<<<<************\e[0m"
    systemctl enable nginx
    systemctl start nginx
    Status_Check
-case $0 in
-    0)
-      echo -e "\e[1;32mSucessfull\e[0m"
-      ;;
-    *)
-      echo failure
-      ;;
-esac
-   echo -e "\e[1;33m************>>>>>>>>>>>>>>>>>>>>Starting Nginx<<<<<<<<<<<<<<<<<<<<*****************\e[0m"
-  # echo Completed installation of frontend
    ;;
  catalogue)
    echo installing catalogue
